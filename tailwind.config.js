@@ -2,7 +2,8 @@
 export default {
   content: [
     './index.html',
-    './src/**/*.{js,ts,jsx,tsx}'
+    './src/**/*.{js,ts,jsx,tsx}',
+    'node_modules/flowbite-react/lib/esm/**/*.js'
   ],
   theme: {
     extend: {},
@@ -13,8 +14,12 @@ export default {
       gradient: {
         start: '#4338CA',
         end: '#5E52F3'
-      }
+      },
+      white: '#FFFFFF',
+      black: '#000000'
     }
   },
-  plugins: []
+  plugins: [
+    require('flowbite/plugin')
+  ]
 }

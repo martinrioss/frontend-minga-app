@@ -24,6 +24,7 @@
             {
                 "allowConstantExport": true
             }
-        ]
+        ],
+        "quotes": "off"
     }
 }
