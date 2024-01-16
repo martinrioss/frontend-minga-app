@@ -11,12 +11,12 @@ export default function Footer () {
     <footer className='shadow-lg border-t'>
       <img src={footer} alt="footer image" className='hidden md:block w-full h-40 object-center rounded-b-[100px]' />
       <section className='flex flex-col md:flex-row items-center mt-5 mb-5 w-full'>
-        <div className='flex justify-evenly w-full md:w-[33%] m-3 font-semibold '>
+        <div className='flex justify-evenly w-full md:w-[33%] m-3 font-semibold text-black'>
           <Link to={'/'}>Home</Link>
           <Link to={'/mangas'}>Mangas</Link>
         </div>
         <div className='md:w-[33%] flex justify-center'>
-          <Link to={'/j'}>
+          <Link to={'/'}>
             <img src={minga} alt="logo minga" className='h-10 w-32 md:h-11 md:w-44' />
           </Link>
         </div>

@@ -8,7 +8,7 @@ function Navbar () {
   const [open, setOpen] = useState(false)
   return (
     <header>
-      <nav className='p-2 text-white font-semibold'>
+      <nav className='p-2 text-white font-semibold h-10'>
         <section className='flex justify-between'>
           <button onClick={() => setOpen(!open)}>
             <img src={menu} alt="menu" className='h-7 w-10' />
@@ -34,7 +34,7 @@ function Navbar () {
           <ul className='mt-5'>
             {
               navLinks.map((e) => (
-                <li key={e} className='mt-4 mb-4 cursor-pointer w-fit'>
+                <li key={e.name} className='mt-4 mb-4 cursor-pointer w-fit'>
                   {e.name}
                 </li>
               )

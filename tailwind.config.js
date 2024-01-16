@@ -6,7 +6,11 @@ export default {
     'node_modules/flowbite-react/lib/esm/**/*.js'
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        homebg: "url('./src/assets/home-bg.webp')"
+      }
+    },
     colors: {
       main: '#4338CA',
       button_green: '#34D399',
